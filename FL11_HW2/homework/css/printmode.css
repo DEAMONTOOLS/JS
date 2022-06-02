@@ -1,0 +1,87 @@
+.tm-sidebar {
+  display: none;
+}
+.flex-item {
+  min-width: fit-content;
+  text-align: center;
+  font-size: x-small;
+}
+.tm-section-title {
+  margin-top: 0px;
+}
+.padding-medium {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.margin-b-10 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.padding-medium h2 {
+  text-align: center;
+  color: lightskyblue;
+  font-weight: 300;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.tm-footer,
+li a {
+  font-size: medium;
+  color: black;
+  font-style: italic;
+}
+.tm-footer {
+  font-size: smaller;
+}
+ol {
+  list-style: none;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+li:nth-child(even) {
+  text-align: right;
+}
+li:nth-child(odd) {
+  text-align: left;
+}
+li::first-letter {
+  color: lightskyblue;
+  font-size: large;
+}
+.boxes {
+  display: none;
+}
+.tm-team-img {
+  display: none;
+}
+#about {
+  display: none;
+}
+.carousel-indicators {
+  display: none;
+}
+.tm-banner {
+  margin: 0px;
+}
+.tm-main-content {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.img-contact-us {
+  display: none;
+}
+#contact {
+  display: none;
+}
+.blocks {
+  padding-left: 20px;
+}
+#tmCarousel {
+  padding: 0px;
+}
+.tm-content-box {
+  margin: 0px;
+}
+section::before {
+  display: none;
+}
