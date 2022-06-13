@@ -11,7 +11,7 @@ mark {
   background-color: #00c8ff;
   display: inline-block;
   line-height: 0;
-  padding-bottom: 15px; }
+  padding-bottom: 0.4em; }
 
 .landing-logo {
   margin-top: 10px; }
@@ -27,6 +27,7 @@ mark {
       font-size: 10px;
       font-weight: 200;
       display: block;
+      width: 30%;
       padding-left: 5px; }
 
 .header_text {
@@ -47,9 +48,10 @@ mark {
 .section {
   margin: 20px 200px; }
   .section .section_card_wrap {
-    margin-bottom: 450px; }
+    margin-bottom: 450px;
+    color: white; }
     .section .section_card_wrap .section_card {
-      width: 250px;
+      width: 400px;
       text-align: center;
       background-color: grey;
       padding: 20px 10px;
@@ -80,8 +82,9 @@ mark {
 .header {
   background-image: url("../img/m-h-day.jpg");
   background-repeat: no-repeat;
-  background-size: 1500px 550px;
-  padding: 20px 100px 100px 100px;
+  background-size: 100%;
+  background-position-y: center;
+  padding: 20px 100px 200px 100px;
   border-bottom-right-radius: 35%; }
 
 .footer {
