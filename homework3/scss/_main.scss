@@ -1,0 +1,134 @@
+// Write your styles here
+body {
+    margin: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: $bg;
+}
+.header_heading{
+    font-size: 50px;
+    font-weight: 900;
+    width: 400px;
+}
+mark{
+    background-color: $underline;
+    display: inline-block;
+    line-height: 0;
+    padding-bottom: 0.4em;
+}
+.landing-logo{
+    margin-top: 10px;
+    img{
+        float: left;
+    }
+    p{
+        width: fit-content;
+        margin: auto;
+        width: 95%;
+        font-weight: 700;
+        font-size: 20px;
+        span{
+            font-size: 10px;
+            font-weight: 200;
+            display: block;
+            width: 30%;
+            padding-left: 5px;
+        }
+    }
+}
+.header_text{
+    width: 40%;
+}
+.header_button{
+    padding: 5px 30px;
+    border: 0ch;
+    margin-top: 20px;
+    background-color: $bgbutton;
+    color: $textcolor;
+}
+.section_text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.section{
+    margin: 20px 200px;
+    .section_card_wrap{
+        margin-bottom: 450px;
+        .section_card{
+            width: 400px;
+            text-align: center;
+            background-color: $card;
+            padding: 20px 10px;
+            font-size: 10px;
+            float: left;
+            margin: 20px;
+            .section_card_heading mark{
+                font-size: 15px;
+                color: $textcolor;
+            }
+            .section_card_text{
+                color: $textcolor;
+                margin: auto;
+                width: 70%;
+            }
+        }
+    }
+    .section_banner{
+        background-image: $gradient;
+        margin: auto;
+        width: 70%;
+        padding: 10px 20px;
+        position: relative;
+        margin-bottom: -70px;
+        .section_banner_text_wrap{
+            clear: left;
+            overflow: hidden;
+            .section_banner_heading{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .section_banner_text{
+                font-size: 10px
+            }
+        }
+        .section_banner_button{
+            @extend.header_button;
+            float: right;
+            margin: -50px 30px 10px 20px;
+        }
+    }
+}
+.header{
+    background-image: $fontimage;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    padding: 20px 100px 200px 100px;
+    border-bottom-right-radius: 35%;
+}
+.footer{
+    background: $card;
+    padding: 20px 10px;
+    font-size: 15px;
+    .footer-wrap{
+        margin: 20px 100px;
+        padding-top: 20px;
+        .footer_logo{
+            width: 300px;
+            float: left;
+            display: block;
+        }
+        .footer_text{
+            display: inline-block;
+            width: 200px;
+            font-size: 10px;
+            padding-left: 450px;
+            text-align: center;
+        }
+        .footer-cr{
+            padding-top: 20px;
+            display: block;
+            float: right;
+        }
+    }
+}
