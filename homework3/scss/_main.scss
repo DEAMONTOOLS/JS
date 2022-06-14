@@ -1,12 +1,24 @@
 // Write your styles here
+@mixin textFormat($size, $weight, $color: black, $textallign: none) {
+    font-size: $size;
+    font-weight: $weight;
+    text-align: $textallign;
+    color: $color;
+}
+@mixin marginWidthBGPad($margin, $width, $bg,  $padding...) {
+    margin: $margin;
+    padding: $padding;
+    width: $width;
+    background: $bg;        
+}
+
 body {
     margin: auto;
     font-family: 'Source Sans Pro', sans-serif;
     background-color: $bg;
 }
 .header_heading{
-    font-size: 50px;
-    font-weight: 900;
+    @include textFormat(50px, 900);
     width: 400px;
 }
 mark{
@@ -21,14 +33,11 @@ mark{
         float: left;
     }
     p{
-        width: fit-content;
         margin: auto;
         width: 95%;
-        font-weight: 700;
-        font-size: 20px;
+        @include textFormat(20px, 700);
         span{
-            font-size: 10px;
-            font-weight: 200;
+            @include textFormat(10px, 200);
             display: block;
             width: 30%;
             padding-left: 5px;
@@ -39,32 +48,24 @@ mark{
     width: 40%;
 }
 .header_button{
-    padding: 5px 30px;
+    @include marginWidthBGPad(20px, 20%, $backgroundColor, 5px 30px);
     border: 0ch;
-    margin-top: 20px;
-    background-color: $bgbutton;
     color: $textcolor;
 }
 .section_text{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
+    @include textFormat(20px, 700, center);
 }
 .section{
     margin: 20px 200px;
+    text-align: center;
     .section_card_wrap{
         margin-bottom: 450px;
         .section_card{
-            width: 400px;
-            text-align: center;
-            background-color: $card;
-            padding: 20px 10px;
-            font-size: 10px;
+            @include textFormat(12px, none, none ,center);
+            @include marginWidthBGPad(20px, 420px, $card, 20px 10px);
             float: left;
-            margin: 20px;
             .section_card_heading mark{
-                font-size: 15px;
-                color: $textcolor;
+                @include textFormat(15px, none, $textcolor ,center);
             }
             .section_card_text{
                 color: $textcolor;
@@ -74,21 +75,17 @@ mark{
         }
     }
     .section_banner{
-        background-image: $gradient;
-        margin: auto;
-        width: 70%;
-        padding: 10px 20px;
+        @include marginWidthBGPad(auto, 70%, $gradient, 10px 20px);
         position: relative;
         margin-bottom: -70px;
         .section_banner_text_wrap{
             clear: left;
             overflow: hidden;
             .section_banner_heading{
-                font-size: 20px;
-                font-weight: 700;
+                @include textFormat(20px, 700, none, left);
             }
             .section_banner_text{
-                font-size: 10px
+                @include textFormat(10px, none, none, left);
             }
         }
         .section_banner_button{
@@ -119,11 +116,10 @@ mark{
             display: block;
         }
         .footer_text{
+            @include textFormat(10px, none, center);
             display: inline-block;
             width: 200px;
-            font-size: 10px;
             padding-left: 450px;
-            text-align: center;
         }
         .footer-cr{
             padding-top: 20px;
