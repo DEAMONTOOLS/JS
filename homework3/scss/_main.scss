@@ -17,84 +17,13 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: $bg;
 }
-.header_heading{
-    @include textFormat(50px, 900);
-    width: 400px;
-}
 mark{
     background-color: $underline;
     display: inline-block;
     line-height: 0;
     padding-bottom: 0.4em;
 }
-.landing-logo{
-    margin-top: 10px;
-    img{
-        float: left;
-    }
-    p{
-        margin: auto;
-        width: 95%;
-        @include textFormat(20px, 700);
-        span{
-            @include textFormat(10px, 200);
-            display: block;
-            width: 30%;
-            padding-left: 5px;
-        }
-    }
-}
-.header_text{
-    width: 40%;
-}
-.header_button{
-    @include marginWidthBGPad(20px, 20%, $backgroundColor, 5px 30px);
-    border: 0ch;
-    color: $textcolor;
-}
-.section_text{
-    @include textFormat(20px, 700, center);
-}
-.section{
-    margin: 20px 200px;
-    text-align: center;
-    .section_card_wrap{
-        margin-bottom: 450px;
-        .section_card{
-            @include textFormat(12px, none, none ,center);
-            @include marginWidthBGPad(20px, 420px, $card, 20px 10px);
-            float: left;
-            .section_card_heading mark{
-                @include textFormat(15px, none, $textcolor ,center);
-            }
-            .section_card_text{
-                color: $textcolor;
-                margin: auto;
-                width: 70%;
-            }
-        }
-    }
-    .section_banner{
-        @include marginWidthBGPad(auto, 70%, $gradient, 10px 20px);
-        position: relative;
-        margin-bottom: -70px;
-        .section_banner_text_wrap{
-            clear: left;
-            overflow: hidden;
-            .section_banner_heading{
-                @include textFormat(20px, 700, none, left);
-            }
-            .section_banner_text{
-                @include textFormat(10px, none, none, left);
-            }
-        }
-        .section_banner_button{
-            @extend.header_button;
-            float: right;
-            margin: -50px 30px 10px 20px;
-        }
-    }
-}
+
 .header{
     background-image: $fontimage;
     background-repeat: no-repeat;
@@ -102,29 +31,100 @@ mark{
     background-position-y: center;
     padding: 20px 100px 200px 100px;
     border-bottom-right-radius: 35%;
+    .landing-logo{
+        margin-top: 10px;
+        img{
+            float: left;
+        }
+        p{
+            margin: auto;
+            width: 95%;
+            @include textFormat(20px, 700);
+            span{
+                @include textFormat(10px, 200);
+                display: block;
+                width: 30%;
+                padding-left: 5px;
+            }
+        }
+    }
+    &_heading{
+        @include textFormat(50px, 900);
+        width: 400px;
+    }
+    &_text{
+        width: 40%;
+    }&_button{
+        @include marginWidthBGPad(20px, 20%, $backgroundColor, 5px 30px);
+        border: 0ch;
+        color: $textcolor;
+    }
+}
+.section{
+    margin: 20px 200px;
+    text-align: center;
+    &_text{
+        @include textFormat(20px, 700, center);
+    }
+    &_card_wrap{
+        margin-bottom: 450px;
+    }
+    &_card{
+        @include textFormat(12px, none, none ,center);
+        @include marginWidthBGPad(20px, 420px, $card, 20px 10px);
+        float: left;
+        &_heading mark{
+        @include textFormat(15px, none, $textcolor ,center);
+        }
+        &_text{
+            color: $textcolor;
+            margin: auto;
+            width: 70%;
+        }
+    }
+    &_banner{
+        @include marginWidthBGPad(auto, 70%, $gradient, 10px 20px);
+        position: relative;
+        margin-bottom: -70px;
+        &_text_wrap{
+            clear: left;
+            overflow: hidden;
+        }
+        &_heading{
+            @include textFormat(20px, 700, none, left);
+        }
+        &_text{
+            @include textFormat(10px, none, none, left);
+        }
+        &_button{
+            @extend.header_button;
+            float: right;
+            margin: -50px 30px 10px 20px;
+        }
+    }
 }
 .footer{
     background: $card;
     padding: 20px 10px;
     font-size: 15px;
-    .footer-wrap{
+    &-wrap{
         margin: 20px 100px;
         padding-top: 20px;
-        .footer_logo{
-            width: 300px;
-            float: left;
-            display: block;
-        }
-        .footer_text{
-            @include textFormat(10px, none, center);
-            display: inline-block;
-            width: 200px;
-            padding-left: 450px;
-        }
-        .footer-cr{
-            padding-top: 20px;
-            display: block;
-            float: right;
-        }
+    }
+    &_logo{
+        width: 300px;
+        float: left;
+        display: block;
+    }
+    &_text{
+        @include textFormat(10px, none, center);
+        display: inline-block;
+        width: 200px;
+        padding-left: 450px;
+    }
+    &-cr{
+        padding-top: 20px;
+        display: block;
+        float: right;
     }
 }
