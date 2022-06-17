@@ -1,0 +1,131 @@
+body {
+  margin: auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: white; }
+
+mark {
+  background-color: #00c8ff;
+  display: inline-block;
+  line-height: 0;
+  padding-bottom: 0.4em; }
+
+.header {
+  background-image: url("../img/m-h-day.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+  padding: 20px 100px 200px 100px;
+  border-bottom-right-radius: 35%; }
+  .header .landing-logo {
+    margin-top: 10px; }
+    .header .landing-logo img {
+      float: left; }
+    .header .landing-logo p {
+      margin: auto;
+      width: 95%;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: none;
+      color: black; }
+      .header .landing-logo p span {
+        font-size: 10px;
+        font-weight: 200;
+        text-align: none;
+        color: black;
+        display: block;
+        width: 30%;
+        padding-left: 5px; }
+  .header_heading {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: none;
+    color: black;
+    width: 400px; }
+  .header_text {
+    width: 40%; }
+  .header_button, .section_banner_button {
+    margin: 20px;
+    padding: 5px 30px;
+    width: 20%;
+    background: green;
+    border: 0ch;
+    color: white; }
+
+.section {
+  margin: 20px 200px;
+  text-align: center; }
+  .section_text {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: none;
+    color: center; }
+  .section_card_wrap {
+    margin-bottom: 450px; }
+  .section_card {
+    font-size: 12px;
+    font-weight: none;
+    text-align: center;
+    color: none;
+    margin: 20px;
+    padding: 20px 10px;
+    width: 420px;
+    background: #0f1948;
+    float: left; }
+    .section_card_heading mark {
+      font-size: 15px;
+      font-weight: none;
+      text-align: center;
+      color: white; }
+    .section_card_text {
+      color: white;
+      margin: auto;
+      width: 70%; }
+  .section_banner {
+    margin: auto;
+    padding: 10px 20px;
+    width: 70%;
+    background: linear-gradient(to right, green, blue);
+    position: relative;
+    margin-bottom: -70px; }
+    .section_banner_text_wrap {
+      clear: left;
+      overflow: hidden; }
+    .section_banner_heading {
+      font-size: 20px;
+      font-weight: 700;
+      text-align: left;
+      color: none; }
+    .section_banner_text {
+      font-size: 10px;
+      font-weight: none;
+      text-align: left;
+      color: none; }
+    .section_banner_button {
+      float: right;
+      margin: -50px 30px 10px 20px; }
+
+.footer {
+  background: #0f1948;
+  padding: 20px 10px;
+  font-size: 15px; }
+  .footer-wrap {
+    margin: 20px 100px;
+    padding-top: 20px; }
+  .footer_logo {
+    width: 300px;
+    float: left;
+    display: block; }
+  .footer_text {
+    font-size: 10px;
+    font-weight: none;
+    text-align: none;
+    color: center;
+    display: inline-block;
+    width: 200px;
+    padding-left: 450px; }
+  .footer-cr {
+    padding-top: 20px;
+    display: block;
+    float: right; }
+
+/*# sourceMappingURL=style1.css.map */
