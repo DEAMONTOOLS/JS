@@ -108,13 +108,13 @@
   .border {
     display: flex;
     flex-wrap: wrap;
-    border-top: 35vh solid black;
+    border-top: 30vh solid black;
     border-left: 100vmax solid transparent;
     border-right: 0 solid black;
     border-bottom: 0 solid transparent;
   }
   .border_text {
-    font-size: 18px;
+    font-size: 1vw;
     width: 40%;
     color: white;
     position: absolute;
@@ -152,7 +152,7 @@
   .main_text {
     margin: 8% 5%;
     text-align: center;
-    font-size: auto;
+    font-size: 1vw;
     height: 50px;
   }
   /* cards */
@@ -193,11 +193,11 @@
     color: white;
     position: absolute;
     top: 50%;
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: 700;
     border: 0px;
-    padding: 5px 38%;
-    left: 2%;
+    padding: 1vh 6vw;
+    left: 1.5vw;
     background-color: #097773ca;
   }
 
