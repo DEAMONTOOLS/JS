@@ -197,7 +197,8 @@
     font-weight: 700;
     border: 0px;
     padding: 1vh 6vw;
-    left: 1.5vw;
+    left: 1vw;
+    right: 1vw;
     background-color: #097773ca;
   }
 
