@@ -7,26 +7,100 @@
   --bg-color--header: #162b4d;
   --link: #fff;
   --link--hover: #b8b8b8;
-  --bg-footer-color: #162b4d;;
+  --bg-footer-color: #162b4d;
 }
 
 body {
   font-family: roboto;
+  background-color: #0b192f;
+  margin: 0;
 }
 .post-1 {
-	background: #B71757;
+  background: #b71757;
 }
 .post-2 {
-	background: #0D7E71;
+  background: #0d7e71;
 }
 .post-3 {
-	background: #b1660e;
+  background: #b1660e;
 }
 .post-4 {
-	background: #d12767;
+  background: #d12767;
 }
 .post-5 {
-	background: #2d95bb;
+  background: #2d95bb;
 }
 
 /* Your styles go here */
+
+@media (max-width: 1400px) {
+  .main_block {
+    margin: auto;
+    width: 70%;
+  }
+
+  /* site navigation block */
+  .top_container {
+    background-color: #162b4d;
+  }
+  .top_block {
+    color: white;
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 3vw;
+    margin: 30px -20px;
+    font-weight: 100;
+  }
+  .logo span {
+    color: #b71757;
+  }
+  .nav a {
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+    font-size: 1.3vw;
+  }
+
+  /* main content on site */
+  .main {
+    margin: 5vh 0;
+    max-width: 80%;
+  }
+  /* posts */
+  .postUnpair {
+    display: flex;
+  }
+  .postImg {
+    max-width: 50%;
+    width: auto;
+    height: auto;
+  }
+  .post_desc {
+    margin: 2vw 2vw;
+    max-width: 30%;
+    color: white;
+  }
+  .post_desc h1 {
+    margin: 0;
+    font-size: 3vw;
+    font-weight: 100;
+  }
+  .post_desc p {
+    margin: 1vw 0;
+    font-size: 1vw;
+    font-weight: 250;
+  }
+  .postPair {
+    display: flex;
+    text-align: end;
+    justify-content: flex-end;
+  }
+  .post-5 .post_desc {
+    max-width: 100%;
+  }
+}
