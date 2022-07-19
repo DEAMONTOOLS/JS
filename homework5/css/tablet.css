@@ -1,24 +1,6 @@
-.post-1 {
-  background: #b71757;
-}
-.post-2 {
-  background: #0d7e71;
-}
-.post-3 {
-  background: #b1660e;
-}
-.post-4 {
-  background: #d12767;
-}
-.post-5 {
-  background: #2d95bb;
-}
 @media (max-width: 768px) {
   body {
-    margin: auto;
-    background-color: #0b192f;
     width: 98%;
-    font-family: roboto;
   }
   .top_container {
     background-color: #162b4d;
@@ -40,7 +22,7 @@
     display: none;
   }
   .posts {
-    width: 65%;
+    max-width: 65%;
   }
   .post_desc {
     margin: 2vw 2vw;
@@ -50,14 +32,10 @@
     color: white;
   }
   .post_desc h1 {
-    margin: 0;
-    font-size: 5vw;
-    font-weight: 100;
+    font-size: 7vw;
   }
   .post_desc p {
-    margin: 1vw 0;
-    font-size: 1.5vw;
-    font-weight: 100;
+    font-size: 2vw;
   }
   .postImg {
     max-width: 100%;
@@ -84,31 +62,22 @@
   }
   .postDate h2 {
     font-size: 5vw;
-    margin: 0;
-    font-weight: 300;
   }
   .postDate p {
     font-size: 3vw;
-    margin: 0;
-    font-weight: 200;
   }
   .secondaryBlogs {
     max-width: 33%;
   }
-
   .news h3 {
-    width: 80%;
-    margin: auto;
     font-weight: 300;
     padding: 1vw 0;
-    font-size: 3vw;
+    font-size: 2.8vw;
   }
   .news p {
-    width: 80%;
-    margin: auto;
     font-weight: 100;
     padding: 1vw 0;
-    font-size: 1.3vw;
+    font-size: 1.6vw;
   }
   .footer {
     display: flex;
@@ -126,5 +95,62 @@
   .footerRight {
     align-self: center;
     max-width: 10%;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    max-width: 100%;
+  }
+  .top_container .logo {
+    font-size: 7vw;
+  }
+  .main_block {
+    display: flex;
+    flex-direction: column;
+  }
+  .posts {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .post_desc h1 {
+    font-size: 8vw;
+  }
+  .post_desc p {
+    font-size: 3vw;
+  }
+  .postDate h2 {
+    font-size: 8vw;
+  }
+  .postDate p {
+    font-size: 5vw;
+  }
+  /* aside */
+  .secondaryBlogs {
+    max-width: 100%;
+    margin-top: 1vw;
+  }
+  .news {
+    background-color: white;
+    padding-bottom: 0.5vw;
+    margin-bottom: 1vw;
+  }
+  .news {
+    margin-bottom: 5vw;
+  }
+  .news h3 {
+    width: 90%;
+    font-size: 6vw;
+  }
+  .news p {
+    font-weight: 100;
+    margin: 1vw 2vw;
+    font-size: 2vw;
+  }
+  .footerDesc {
+    font-size: 2vw;
+  }
+  .footerRight {
+    align-self: center;
+    max-width: 20%;
   }
 }
