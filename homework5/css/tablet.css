@@ -1,0 +1,156 @@
+@media (max-width: 768px) {
+  body {
+    width: 98%;
+  }
+  .top_container {
+    background-color: #162b4d;
+  }
+  .top_container .logo {
+    font-size: 4vw;
+  }
+  .top_block {
+    color: white;
+    flex-direction: column-reverse;
+    padding-bottom: 5vw;
+  }
+  .nav i {
+    display: block;
+    margin: 2vw;
+    padding-bottom: 5vw;
+  }
+  .nav a {
+    display: none;
+  }
+  .posts {
+    max-width: 65%;
+  }
+  .post_desc {
+    margin: 2vw 2vw;
+    max-width: 80%;
+    margin: auto;
+    padding: 2vw;
+    color: white;
+  }
+  .post_desc h1 {
+    font-size: 7vw;
+  }
+  .post_desc p {
+    font-size: 2vw;
+  }
+  .postImg {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  .postUnpair {
+    flex-direction: column;
+  }
+  .postPair {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+  .postDateUnpair {
+    position: relative;
+    text-align: center;
+  }
+  .postDatePair {
+    position: relative;
+    text-align: center;
+  }
+  .postDate {
+    padding: 5vw 0 2vw 0;
+  }
+  .postDate h2 {
+    font-size: 5vw;
+  }
+  .postDate p {
+    font-size: 3vw;
+  }
+  .secondaryBlogs {
+    max-width: 33%;
+  }
+  .news h3 {
+    font-weight: 300;
+    padding: 1vw 0;
+    font-size: 2.8vw;
+  }
+  .news p {
+    font-weight: 100;
+    padding: 1vw 0;
+    font-size: 1.6vw;
+  }
+  .footer {
+    display: flex;
+    background-color: #162b4d;
+    flex-direction: column;
+    padding: 2.5vw;
+    text-align: center;
+  }
+  .footerDesc {
+    color: gray;
+    font-weight: 100;
+    margin: 0vw;
+    font-size: 1.1vw;
+  }
+  .footerRight {
+    align-self: center;
+    max-width: 10%;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    max-width: 100%;
+  }
+  .top_container .logo {
+    font-size: 7vw;
+  }
+  .main_block {
+    display: flex;
+    flex-direction: column;
+  }
+  .posts {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .post_desc h1 {
+    font-size: 8vw;
+  }
+  .post_desc p {
+    font-size: 3vw;
+  }
+  .postDate h2 {
+    font-size: 8vw;
+  }
+  .postDate p {
+    font-size: 5vw;
+  }
+  /* aside */
+  .secondaryBlogs {
+    max-width: 100%;
+    margin-top: 1vw;
+  }
+  .news {
+    background-color: white;
+    padding-bottom: 0.5vw;
+    margin-bottom: 1vw;
+  }
+  .news {
+    margin-bottom: 5vw;
+  }
+  .news h3 {
+    width: 90%;
+    font-size: 6vw;
+  }
+  .news p {
+    font-weight: 100;
+    margin: 1vw 2vw;
+    font-size: 2vw;
+  }
+  .footerDesc {
+    font-size: 2vw;
+  }
+  .footerRight {
+    align-self: center;
+    max-width: 20%;
+  }
+}
