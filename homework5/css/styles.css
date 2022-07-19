@@ -50,6 +50,9 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+  .top_block h1 {
+    margin: 1vw;
+  }
   .logo {
     font-size: 3vw;
     font-weight: 100;
@@ -57,13 +60,25 @@ body {
   .logo span {
     color: #b71757;
   }
+  .nav i {
+    display: none;
+  }
   .nav a {
     font-weight: 300;
     color: white;
     text-decoration: none;
-    margin: 0 1vw;
+    padding: 2vw 1vw;
     font-size: 1.3vw;
   }
+  a:hover {
+    background-color: #b8b8b8;
+  }
+  .post_desc:hover,
+  .postImg:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
   .main_block {
     display: flex;
     justify-content: space-between;

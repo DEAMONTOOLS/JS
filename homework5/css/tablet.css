@@ -1,0 +1,116 @@
+.post-1 {
+  background: #b71757;
+}
+.post-2 {
+  background: #0d7e71;
+}
+.post-3 {
+  background: #b1660e;
+}
+.post-4 {
+  background: #d12767;
+}
+.post-5 {
+  background: #2d95bb;
+}
+@media (max-width: 768px) {
+  body {
+    margin: auto;
+    background-color: #0b192f;
+    width: 98%;
+    font-family: roboto;
+  }
+  .top_container {
+    background-color: #162b4d;
+  }
+  .top_container .logo {
+    font-size: 4vw;
+  }
+  .top_block {
+    color: white;
+    flex-direction: column-reverse;
+    padding-bottom: 5vw;
+  }
+  .nav i {
+    display: block;
+    margin: 2vw;
+    padding-bottom: 5vw;
+  }
+  .nav a {
+    display: none;
+  }
+  .posts {
+    width: 65%;
+  }
+  .post_desc {
+    margin: 2vw 2vw;
+    max-width: 80%;
+    margin: auto;
+    padding: 2vw;
+    color: white;
+  }
+  .post_desc h1 {
+    margin: 0;
+    font-size: 5vw;
+    font-weight: 100;
+  }
+  .post_desc p {
+    margin: 1vw 0;
+    font-size: 1.5vw;
+    font-weight: 100;
+  }
+  .postImg {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  .postUnpair {
+    flex-direction: column;
+  }
+  .postPair {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+  .postDateUnpair {
+    position: relative;
+    text-align: center;
+  }
+  .postDatePair {
+    position: relative;
+    text-align: center;
+  }
+  .postDate {
+    padding: 5vw 0 2vw 0;
+  }
+  .postDate h2 {
+    font-size: 5vw;
+    margin: 0;
+    font-weight: 300;
+  }
+  .postDate p {
+    font-size: 3vw;
+    margin: 0;
+    font-weight: 200;
+  }
+  .secondaryBlogs {
+    max-width: 33%;
+  }
+
+  .news h3 {
+    width: 80%;
+    margin: auto;
+    font-weight: 300;
+    padding: 1vw 0;
+    font-size: 3vw;
+  }
+  .news p {
+    width: 80%;
+    margin: auto;
+    font-weight: 100;
+    padding: 1vw 0;
+    font-size: 1.3vw;
+  }
+  .footer {
+    display: none;
+  }
+}
