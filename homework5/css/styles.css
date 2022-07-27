@@ -40,17 +40,17 @@ body {
   }
 
   /* site navigation block */
-  .top_container {
+  .top {
     background-color: #162b4d;
   }
-  .top_block {
+  .top-block {
     color: white;
     margin: 0 4vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .top_block h1 {
+  .top-block h1 {
     margin: 1vw;
   }
   .logo {
@@ -60,10 +60,10 @@ body {
   .logo span {
     color: #b71757;
   }
-  .nav i {
+  .top-nav i {
     display: none;
   }
-  .nav a {
+  .top-nav a {
     font-weight: 300;
     color: white;
     text-decoration: none;
@@ -73,57 +73,57 @@ body {
   a:hover {
     background-color: #b8b8b8;
   }
-  .post_desc:hover,
-  .postImg:hover {
+  .post-desc:hover,
+  .post-img:hover {
     opacity: 0.5;
     cursor: pointer;
   }
 
-  .main_block {
+  .main {
     display: flex;
     justify-content: space-between;
   }
   /* main content on site */
-  .posts {
+  .main-post {
     margin: 5vh 0;
     max-width: 75%;
   }
   /* posts */
-  .postUnpair {
+  .post-odd {
     display: flex;
     position: relative;
   }
-  .postImg {
+  .post-img {
     max-width: 50%;
     width: auto;
     height: auto;
   }
-  .post_desc {
+  .post-desc {
     margin: 2vw 2vw;
     max-width: 35%;
     color: white;
   }
-  .post_desc h1 {
+  .post-desc h1 {
     margin: 0;
     font-size: 3.2vw;
     font-weight: 100;
   }
-  .post_desc p {
+  .post-desc p {
     margin: 1vw 0;
     font-size: 1.1vw;
     font-weight: 250;
   }
-  .postPair {
+  .post-even {
     display: flex;
     text-align: end;
     justify-content: right;
     position: relative;
   }
-  .post-5 .post_desc {
+  .post-5 .post-desc {
     max-width: 85%;
   }
   /* date on the corner at post*/
-  .postDateUnpair {
+  .post-date-odd {
     position: absolute;
     top: 1vw;
     right: 1vw;
@@ -131,17 +131,17 @@ body {
     color: white;
     opacity: 0.3;
   }
-  .postDate h2 {
+  .num {
     font-size: 3vw;
     margin: 0;
     font-weight: 300;
   }
-  .postDate p {
+  .month {
     font-size: 2vw;
     margin: 0;
     font-weight: 200;
   }
-  .postDatePair {
+  .post-date-even {
     position: absolute;
     top: 1vw;
     left: 1vw;
@@ -150,7 +150,7 @@ body {
     opacity: 0.3;
   }
   /* aside bar */
-  .secondaryBlogs {
+  .aside {
     max-width: 23%;
     margin-top: 5vh;
   }
@@ -169,7 +169,7 @@ body {
     margin: 0.5vw 1.5vw;
     font-size: 1vw;
   }
-  .newsImg {
+  .news-img {
     max-width: 100%;
     width: auto;
     height: auto;
@@ -180,13 +180,13 @@ body {
     background-color: #162b4d;
     padding: 1vw;
   }
-  .footerDesc {
+  .footer-desc {
     color: gray;
     font-weight: 100;
     margin: 0.5vw;
     font-size: 1vw;
   }
-  .footerRight {
+  .footer-right {
     max-width: 15%;
   }
 }

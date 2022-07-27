@@ -2,71 +2,71 @@
   body {
     width: 98%;
   }
-  .top_container {
+  .top {
     background-color: #162b4d;
   }
-  .top_container .logo {
+  .top-block .logo {
     font-size: 4vw;
   }
-  .top_block {
+  .top-block {
     color: white;
     flex-direction: column-reverse;
     padding-bottom: 5vw;
   }
-  .nav i {
+  .top-nav i {
     display: block;
     margin: 2vw;
     padding-bottom: 5vw;
   }
-  .nav a {
+  .top-nav a {
     display: none;
   }
-  .posts {
+  .main-post {
     max-width: 65%;
   }
-  .post_desc {
+  .post-desc {
     margin: 2vw 2vw;
     max-width: 80%;
     margin: auto;
     padding: 2vw;
     color: white;
   }
-  .post_desc h1 {
+  .post-desc h1 {
     font-size: 7vw;
   }
-  .post_desc p {
+  .post-desc p {
     font-size: 2vw;
   }
-  .postImg {
+  .post-img {
     max-width: 100%;
     width: auto;
     height: auto;
   }
-  .postUnpair {
-    flex-direction: column;
-  }
-  .postPair {
+  .post-even {
     flex-direction: column-reverse;
     text-align: left;
   }
-  .postDateUnpair {
+  .post-odd {
+    flex-direction: column;
+  }
+  .post-date-odd {
     position: relative;
     text-align: center;
   }
-  .postDatePair {
+  .post-date-even {
     position: relative;
     text-align: center;
   }
-  .postDate {
+  .post-date {
     padding: 5vw 0 2vw 0;
   }
-  .postDate h2 {
+  .num {
     font-size: 5vw;
   }
-  .postDate p {
+  .month {
     font-size: 3vw;
   }
-  .secondaryBlogs {
+  .aside {
     max-width: 33%;
   }
   .news h3 {
@@ -86,13 +86,13 @@
     padding: 2.5vw;
     text-align: center;
   }
-  .footerDesc {
+  .footer-desc {
     color: gray;
     font-weight: 100;
     margin: 0vw;
     font-size: 1.1vw;
   }
-  .footerRight {
+  .footer-right {
     align-self: center;
     max-width: 10%;
   }
@@ -101,31 +101,31 @@
   body {
     max-width: 100%;
   }
-  .top_container .logo {
+  .top .logo {
     font-size: 7vw;
   }
-  .main_block {
+  .main {
     display: flex;
     flex-direction: column;
   }
-  .posts {
+  .main-post {
     max-width: 100%;
     margin-bottom: 0;
   }
-  .post_desc h1 {
+  .post-desc h1 {
     font-size: 8vw;
   }
-  .post_desc p {
+  .post-desc p {
     font-size: 3vw;
   }
-  .postDate h2 {
+  .num {
     font-size: 8vw;
   }
-  .postDate p {
+  .month {
     font-size: 5vw;
   }
   /* aside */
-  .secondaryBlogs {
+  .aside {
     max-width: 100%;
     margin-top: 1vw;
   }
@@ -146,10 +146,10 @@
     margin: 1vw 2vw;
     font-size: 2vw;
   }
-  .footerDesc {
+  .footer-desc {
     font-size: 2vw;
   }
-  .footerRight {
+  .footer-right {
     align-self: center;
     max-width: 20%;
   }

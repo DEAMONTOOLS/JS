@@ -22,42 +22,46 @@
     <!-- Your code goes here -->
 
     <!-- site navigation -->
-    <div class="top_container">
-      <div class="top_block">
+    <div class="top">
+      <div class="top-block">
         <h1 class="logo">Travel<span>Blog</span></h1>
-        <nav class="nav">
+        <nav class="top-nav">
           <i class="fa fa-bars"> </i>
-          <a class="nav_link" href="#">Blog</a>
-          <a class="nav_link" href="#">About</a>
-          <a class="nav_link" href="#">Archive</a>
-          <a class="nav_link" href="#">Contact</a>
+          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Archive</a>
+          <a class="nav-link" href="#">Contact</a>
         </nav>
       </div>
     </div>
     <!-- site content -->
-    <div class="main_block">
-      <main class="posts">
-        <div class="postUnpair post-1">
-          <img class="postImg post-1" src="./img/post1.jpg" alt="post1" />
-          <div class="post_desc">
+    <main class="main">
+      <div class="main-post">
+        <div class="post-odd post-1">
+          <img
+            class="post-img post-1"
+            src="./img/post1.jpg"
+            alt="a beatiful sunrise"
+          />
+          <div class="post-desc">
             <h1>My responsive template</h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
               veniam, modi error iste sed harum placeat voluptas ducimus eos
               minus at, voluptatum, hic aut deleniti!
             </p>
-            <div class="postDate postDateUnpair">
-              <h2>07</h2>
-              <p>mar</p>
+            <div class="post-date post-date-odd">
+              <time class="num">07</time>
+              <time class="month">mar</time>
             </div>
           </div>
         </div>
-        <div class="postPair post-2">
-          <div class="postDate postDatePair">
-            <h2>06</h2>
-            <p>mar</p>
+        <div class="post-even post-2">
+          <div class="post-date post-date-even">
+            <time class="num">06</time>
+            <time class="month">mar</time>
           </div>
-          <div class="post_desc">
+          <div class="post-desc">
             <h1>Amazing travel blog</h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
@@ -65,29 +69,37 @@
               minus at, voluptatum, hic aut deleniti!
             </p>
           </div>
-          <img class="postImg post-2" src="./img/post2.jpg" alt="post2" />
+          <img
+            class="post-img post-2"
+            src="./img/post2.jpg"
+            alt="travel route planing"
+          />
         </div>
-        <div class="postUnpair post-3">
-          <img class="postImg post-3" src="./img/post3.jpg" alt="post3" />
-          <div class="post_desc">
+        <div class="post-odd post-3">
+          <img
+            class="post-img post-3"
+            src="./img/post3.jpg"
+            alt="beatiful landscape after hard travel"
+          />
+          <div class="post-desc">
             <h1>Nice minimalist travel</h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
               veniam, modi error iste sed harum placeat voluptas ducimus eos
               minus at, voluptatum, hic aut deleniti!
             </p>
-            <div class="postDate postDateUnpair">
-              <h2>04</h2>
-              <p>mar</p>
+            <div class="post-date post-date-odd">
+              <time class="num">04</time>
+              <time class="month">mar</time>
             </div>
           </div>
         </div>
-        <div class="postPair post-4">
-          <div class="postDate postDatePair">
-            <h2>01</h2>
-            <p>mar</p>
+        <div class="post-even post-4">
+          <div class="post-date post-date-even">
+            <time class="num">01</time>
+            <time class="month">mar</time>
           </div>
-          <div class="post_desc">
+          <div class="post-desc">
             <h1>With amazing regions</h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
@@ -95,26 +107,30 @@
               minus at, voluptatum, hic aut deleniti!
             </p>
           </div>
-          <img class="postImg post-4" src="./img/post4.jpg" alt="post4" />
+          <img
+            class="post-img post-4"
+            src="./img/post4.jpg"
+            alt="landscape from the aiplane window"
+          />
         </div>
-        <div class="postUnpair post-5">
-          <div class="post_desc">
+        <div class="post-odd post-5">
+          <div class="post-desc">
             <h1>And again - it`s totally amazing</h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
               veniam, modi error iste sed harum placeat voluptas ducimus eos
               minus at, voluptatum, hic aut deleniti!
             </p>
-            <div class="postDate postDateUnpair">
-              <h2>27</h2>
-              <p>feb</p>
+            <div class="post-date post-date-odd">
+              <time class="num">27</time>
+              <time class="month">feb</time>
             </div>
           </div>
         </div>
-      </main>
-      <aside class="secondaryBlogs">
+      </div>
+      <aside class="aside">
         <div class="news">
-          <img class="newsImg" src="./img/news1.jpg" alt="news1" />
+          <img class="news-img" src="./img/news1.jpg" alt="recreation base" />
           <h3>This is the first news on blog</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
@@ -124,7 +140,11 @@
           </p>
         </div>
         <div class="news">
-          <img class="newsImg" src="./img/news2.jpg" alt="news2" />
+          <img
+            class="news-img"
+            src="./img/news2.jpg"
+            alt="lake in the mountain"
+          />
           <h3>Second news on the Travel blog</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
@@ -134,18 +154,18 @@
           </p>
         </div>
       </aside>
-    </div>
+    </main>
     <!-- footer -->
     <footer class="footer">
-      <div class="footerLeft">
-        <p class="footerDesc">Copyright 2018, Epam systems</p>
-        <p class="footerDesc">
+      <div class="footer-left">
+        <p class="footer-desc">Copyright 2018, Epam systems</p>
+        <p class="footer-desc">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
           nobis.
         </p>
       </div>
-      <div class="footerRight">
-        <p class="footerDesc">Design and coding <span>by Dmytro</span></p>
+      <div class="footer-right">
+        <p class="footer-desc">Design and coding <span>by Dmytro</span></p>
       </div>
     </footer>
   </body>
