@@ -6,12 +6,17 @@ let winSum = 0
 let range = 9
 let earn = 100;
 
+// running while player want to play
 while(running){
     if (check) {
-        alert('Lets play')
-        const num = Math.floor(Math.random() * range);
+        alert('Lets play. You have 3 try')
+        const num = Math.floor(Math.random() * range); // create random range
+
+        // loop to check input number
         for(let count = 0; count < maxCount; count++){
-            let userNum = prompt('Enter number: ')
+            let userNum = prompt(`Enter number from 0 to ${range -1}: `)
+
+            //how much player earn if he guessed
             if (userNum == num){
                 if (count === 0){
                     alert('Congratulation, you won')
@@ -28,7 +33,10 @@ while(running){
                 } 
             }
         }
+
         running = confirm('Do you want to continue?')
+
+        // if you want continue play the range and winning money will be incresed
         if (running){
             range += 4
             earn *= 2
@@ -38,7 +46,7 @@ while(running){
         }
     }
     else {
-        running = false
+        running = false // close game
         alert('You did not become a billionaire, but can.')
     }
 
