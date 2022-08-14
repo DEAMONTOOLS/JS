@@ -11,26 +11,15 @@ while(running){
     if (check) {
         alert('Lets play. You have 3 try');
         const num = Math.floor(Math.random() * range); // create random range
-
         // loop to check input number
         for(let count = 0; count < maxCount; count++){
-            let userNum = prompt(`Enter number from 0 to ${range -1}: `)
+            let userNum = prompt(`Enter number from 0 to ${range - 1}: `)
 
             //how much player earn if he guessed
             if (userNum == num){
-                if (count === 0){
-                    alert('Congratulation, you won');
-                    winSum += earn;
-                    break;
-                } else if (count === 1){
-                    alert('Congratulation, you won')
-                    winSum += earn / 2;
-                    break; 
-                } else { 
-                    alert('Congratulation, you won');
-                    winSum += earn / 4;
-                    break;
-                } 
+                alert('Congratulation, you won');
+                winSum += earn / Math.pow(2, count);
+                break;
             }
         }
 
