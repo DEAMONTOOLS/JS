@@ -15,5 +15,5 @@ function formatTime(minutes) {
         }
     }
 
-    return (`${days} days, ${hours} hours, ${minutes} minutes`)
+    return `${days} days, ${hours} hours, ${minutes} minutes`;
 }
