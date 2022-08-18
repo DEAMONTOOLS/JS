@@ -7,26 +7,186 @@
   --bg-color--header: #162b4d;
   --link: #fff;
   --link--hover: #b8b8b8;
-  --bg-footer-color: #162b4d;;
+  --bg-footer-color: #162b4d;
 }
 
 body {
   font-family: roboto;
+  background-color: #0b192f;
+  margin: 0;
 }
 .post-1 {
-	background: #B71757;
+  background: #b71757;
 }
 .post-2 {
-	background: #0D7E71;
+  background: #0d7e71;
 }
 .post-3 {
-	background: #b1660e;
+  background: #b1660e;
 }
 .post-4 {
-	background: #d12767;
+  background: #d12767;
 }
 .post-5 {
-	background: #2d95bb;
+  background: #2d95bb;
 }
 
 /* Your styles go here */
+
+@media (max-width: 1920px) {
+  body {
+    margin: auto;
+    width: 70%;
+  }
+
+  /* site navigation block */
+  .top {
+    background-color: #162b4d;
+  }
+  .top-block {
+    color: white;
+    margin: 0 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-block h1 {
+    margin: 1vw;
+  }
+  .logo {
+    font-size: 3vw;
+    font-weight: 100;
+  }
+  .logo span {
+    color: #b71757;
+  }
+  .top-nav i {
+    display: none;
+  }
+  .top-nav a {
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    padding: 2vw 1vw;
+    font-size: 1.3vw;
+  }
+  a:hover {
+    background-color: #b8b8b8;
+  }
+  .post-desc:hover,
+  .post-img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* main content on site */
+  .main-post {
+    margin: 5vh 0;
+    max-width: 75%;
+  }
+  /* posts */
+  .post-odd {
+    display: flex;
+    position: relative;
+  }
+  .post-img {
+    max-width: 50%;
+    width: auto;
+    height: auto;
+  }
+  .post-desc {
+    margin: 2vw 2vw;
+    max-width: 35%;
+    color: white;
+  }
+  .post-desc h1 {
+    margin: 0;
+    font-size: 3.2vw;
+    font-weight: 100;
+  }
+  .post-desc p {
+    margin: 1vw 0;
+    font-size: 1.1vw;
+    font-weight: 250;
+  }
+  .post-even {
+    display: flex;
+    text-align: end;
+    justify-content: right;
+    position: relative;
+  }
+  .post-5 .post-desc {
+    max-width: 85%;
+  }
+  /* date on the corner at post*/
+  .post-date-odd {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    font-size: 18px;
+    color: white;
+    opacity: 0.3;
+  }
+  .num {
+    font-size: 3vw;
+    margin: 0;
+    font-weight: 300;
+  }
+  .month {
+    font-size: 2vw;
+    margin: 0;
+    font-weight: 200;
+  }
+  .post-date-even {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    font-size: 18px;
+    color: white;
+    opacity: 0.3;
+  }
+  /* aside bar */
+  .aside {
+    max-width: 23%;
+    margin-top: 5vh;
+  }
+  .news {
+    background-color: white;
+    padding-bottom: 0.5vw;
+    margin-bottom: 1vw;
+  }
+  .news h3 {
+    font-weight: 300;
+    margin: 1vw 1.5vw;
+    font-size: 1.5vw;
+  }
+  .news p {
+    font-weight: 100;
+    margin: 0.5vw 1.5vw;
+    font-size: 1vw;
+  }
+  .news-img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #162b4d;
+    padding: 1vw;
+  }
+  .footer-desc {
+    color: gray;
+    font-weight: 100;
+    margin: 0.5vw;
+    font-size: 1vw;
+  }
+  .footer-right {
+    max-width: 15%;
+  }
+}

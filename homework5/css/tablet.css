@@ -1,0 +1,156 @@
+@media (max-width: 768px) {
+  body {
+    width: 98%;
+  }
+  .top {
+    background-color: #162b4d;
+  }
+  .top-block .logo {
+    font-size: 4vw;
+  }
+  .top-block {
+    color: white;
+    flex-direction: column-reverse;
+    padding-bottom: 5vw;
+  }
+  .top-nav i {
+    display: block;
+    margin: 2vw;
+    padding-bottom: 5vw;
+  }
+  .top-nav a {
+    display: none;
+  }
+  .main-post {
+    max-width: 65%;
+  }
+  .post-desc {
+    margin: 2vw 2vw;
+    max-width: 80%;
+    margin: auto;
+    padding: 2vw;
+    color: white;
+  }
+  .post-desc h1 {
+    font-size: 7vw;
+  }
+  .post-desc p {
+    font-size: 2vw;
+  }
+  .post-img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  .post-even {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+  .post-odd {
+    flex-direction: column;
+  }
+  .post-date-odd {
+    position: relative;
+    text-align: center;
+  }
+  .post-date-even {
+    position: relative;
+    text-align: center;
+  }
+  .post-date {
+    padding: 5vw 0 2vw 0;
+  }
+  .num {
+    font-size: 5vw;
+  }
+  .month {
+    font-size: 3vw;
+  }
+  .aside {
+    max-width: 33%;
+  }
+  .news h3 {
+    font-weight: 300;
+    padding: 1vw 0;
+    font-size: 2.8vw;
+  }
+  .news p {
+    font-weight: 100;
+    padding: 1vw 0;
+    font-size: 1.6vw;
+  }
+  .footer {
+    display: flex;
+    background-color: #162b4d;
+    flex-direction: column;
+    padding: 2.5vw;
+    text-align: center;
+  }
+  .footer-desc {
+    color: gray;
+    font-weight: 100;
+    margin: 0vw;
+    font-size: 1.1vw;
+  }
+  .footer-right {
+    align-self: center;
+    max-width: 10%;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    max-width: 100%;
+  }
+  .top .logo {
+    font-size: 7vw;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-post {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .post-desc h1 {
+    font-size: 8vw;
+  }
+  .post-desc p {
+    font-size: 3vw;
+  }
+  .num {
+    font-size: 8vw;
+  }
+  .month {
+    font-size: 5vw;
+  }
+  /* aside */
+  .aside {
+    max-width: 100%;
+    margin-top: 1vw;
+  }
+  .news {
+    background-color: white;
+    padding-bottom: 0.5vw;
+    margin-bottom: 1vw;
+  }
+  .news {
+    margin-bottom: 5vw;
+  }
+  .news h3 {
+    width: 90%;
+    font-size: 6vw;
+  }
+  .news p {
+    font-weight: 100;
+    margin: 1vw 2vw;
+    font-size: 2vw;
+  }
+  .footer-desc {
+    font-size: 2vw;
+  }
+  .footer-right {
+    align-self: center;
+    max-width: 20%;
+  }
+}
