@@ -1,9 +1,11 @@
-function getMin() {
-    let argumentCount = arguments.length;
-    let theSmallestNum = arguments[0];
+function getMin(...nums) {
+    let argumentCount = nums.length;
+    let theSmallestNum = nums[0];
+
     for( let i = 0; i < argumentCount; i++) {
-        if (arguments[i] < theSmallestNum)
-            theSmallestNum = arguments[i];
+        if (nums[i] < theSmallestNum)
+            theSmallestNum = nums[i];
     }
-    console.log(theSmallestNum);
+
+    return theSmallestNum;
 }
